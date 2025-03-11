@@ -1,0 +1,288 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import FormationCard from '../components/FormationCard.astro';
+---
+
+<Layout title="Mes Formations">
+  <section class="py-12 bg-light">
+    <div class="container mx-auto px-4">
+      <SectionTitle 
+        title="Mes Formations" 
+        subtitle="Parcours complet de formations et certifications" 
+      />
+      
+      <!-- Banner image -->
+      <div class="mb-10 rounded-lg overflow-hidden shadow-lg">
+        <img 
+          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+          alt="Formation professionnelle" 
+          class="w-full h-64 object-cover"
+        />
+      </div>
+      
+      <!-- Microsoft Certifications -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-secondary mb-4">Certifications Microsoft</h3>
+        <p class="mb-6 text-gray-700">Les certifications Microsoft Power Platform valident les compétences techniques pour concevoir, développer et déployer des solutions d'entreprise innovantes.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <a href="/formations/power-automate" class="block bg-white p-6 rounded-lg shadow-md border-l-4 border-primary hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <img src="https://img.icons8.com/color/48/000000/microsoft-power-automate.png" alt="Power Automate" class="w-10 h-10 mr-3" />
+              <h4 class="text-lg font-semibold text-secondary">Concepteur Power Automate</h4>
+            </div>
+            <p class="text-gray-600">Certification permettant de créer des flux de travail automatisés entre applications et services pour synchroniser des fichiers, collecter des données et recevoir des notifications.</p>
+            <p class="text-sm text-gray-500 mt-2">Obtenue en 2023</p>
+            <p class="text-primary mt-3 flex items-center">
+              En savoir plus
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </p>
+          </a>
+          
+          <a href="/formations/power-bi" class="block bg-white p-6 rounded-lg shadow-md border-l-4 border-primary hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <img src="https://img.icons8.com/color/48/000000/power-bi.png" alt="Power BI" class="w-10 h-10 mr-3" />
+              <h4 class="text-lg font-semibold text-secondary">Concepteur Power BI</h4>
+            </div>
+            <p class="text-gray-600">Maîtrise des outils d'analyse de données et de création de tableaux de bord interactifs pour transformer les données brutes en insights visuels.</p>
+            <p class="text-sm text-gray-500 mt-2">Obtenue en 2022</p>
+            <p class="text-primary mt-3 flex items-center">
+              En savoir plus
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </p>
+          </a>
+          
+          <a href="/formations/powerapps" class="block bg-white p-6 rounded-lg shadow-md border-l-4 border-primary hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <img src="https://img.icons8.com/color/48/000000/microsoft-powerapps.png" alt="PowerApps" class="w-10 h-10 mr-3" />
+              <h4 class="text-lg font-semibold text-secondary">Concepteur PowerApps</h4>
+            </div>
+            <p class="text-gray-600">Compétences pour développer des applications métier personnalisées sans code ou avec peu de code, connectées à diverses sources de données.</p>
+            <p class="text-sm text-gray-500 mt-2">Obtenue en 2022</p>
+            <p class="text-primary mt-3 flex items-center">
+              En savoir plus
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </p>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Formations Croix-Rouge -->
+      <div class="mb-10">
+        <h3 class="text-2xl font-semibold text-secondary mb-4">Formations Croix-Rouge</h3>
+        <p class="mb-6 text-gray-700">Parcours complet de formations spécialisées dans le secourisme, la formation et la gestion d'équipes d'urgence.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <a href="/formations/encadrant-formation" class="block bg-white p-6 rounded-lg shadow-md flex hover:shadow-lg transition-shadow">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80" alt="Formation de formateurs" class="w-24 h-24 object-cover rounded-lg mr-4" />
+            <div>
+              <h4 class="text-lg font-semibold text-secondary">Concepteur Encadrant d'Activité de Formation</h4>
+              <p class="text-gray-600 mt-1">Formation avancée permettant de concevoir, organiser et évaluer des programmes de formation complets.</p>
+              <p class="text-sm text-gray-500 mt-2">Modane, 2020</p>
+              <p class="text-primary mt-2 flex items-center text-sm">
+                En savoir plus
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </p>
+            </div>
+          </a>
+          
+          <a href="#" class="block bg-white p-6 rounded-lg shadow-md flex hover:shadow-lg transition-shadow">
+            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80" alt="Formation pédagogique" class="w-24 h-24 object-cover rounded-lg mr-4" />
+            <div>
+              <h4 class="text-lg font-semibold text-secondary">Pédagogie Appliquée à l'Emploi de Formateur de Formateur</h4>
+              <p class="text-gray-600 mt-1">Techniques pédagogiques avancées pour former d'autres formateurs et transmettre des compétences d'enseignement.</p>
+              <p class="text-sm text-gray-500 mt-2">2019</p>
+              <p class="text-primary mt-2 flex items-center text-sm">
+                En savoir plus
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </p>
+            </div>
+          </a>
+          
+          <a href="/formations/formateur-secourisme" class="block bg-white p-6 rounded-lg shadow-md flex hover:shadow-lg transition-shadow">
+            <img src="https://images.unsplash.com/photo-1590012314607-cda9d9b699ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80" alt="Premiers secours" class="w-24 h-24 object-cover rounded-lg mr-4" />
+            <div>
+              <h4 class="text-lg font-semibold text-secondary">Formateur Premier Secours</h4>
+              <p class="text-gray-600 mt-1">Qualification permettant d'enseigner les gestes de premiers secours au grand public et aux professionnels.</p>
+              <p class="text-sm text-gray-500 mt-2">Modane, 2018</p>
+              <p class="text-primary mt-2 flex items-center text-sm">
+                En savoir plus
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </p>
+            </div>
+          </a>
+          
+          <a href="#" class="block bg-white p-6 rounded-lg shadow-md flex hover:shadow-lg transition-shadow">
+            <img src="https://images.unsplash.com/photo-1516841273335-e39b37888115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80" alt="Chef d'intervention" class="w-24 h-24 object-cover rounded-lg mr-4" />
+            <div>
+              <h4 class="text-lg font-semibold text-secondary">Chef d'Intervention</h4>
+              <p class="text-gray-600 mt-1">Formation à la gestion d'équipes de secouristes sur le terrain et à la coordination des interventions d'urgence.</p>
+              <p class="text-sm text-gray-500 mt-2">Montluçon, 2016</p>
+              <p class="text-primary mt-2 flex items-center text-sm">
+                En savoir plus
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Liste complète des formations -->
+      <SectionTitle 
+        title="Liste complète des formations" 
+        subtitle="Parcours de formation détaillé" 
+      />
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <FormationCard 
+          title="Concepteur Power Automate" 
+          year="2023"
+        />
+        <FormationCard 
+          title="Concepteur Power BI" 
+          year="2022"
+        />
+        <FormationCard 
+          title="Concepteur Encadrant d'Activité de Formation" 
+          location="Modane"
+          year="2020"
+        />
+        <FormationCard 
+          title="Pédagogie Appliqué à l'Emploi de Formateur de Formateur" 
+          year="2019"
+        />
+        <FormationCard 
+          title="Premiers Secours" 
+          location="Modane"
+          year="2019"
+        />
+        <FormationCard 
+          title="Pédagogie Initiale Commune de Formateur de Formateur" 
+          location="Modane"
+          year="2018"
+        />
+        <FormationCard 
+          title="Formations diverses en E-learning" 
+          year="2017-2023"
+        />
+        <FormationCard 
+          title="Concepteur PowerApps" 
+          year="2022"
+        />
+        <FormationCard 
+          title="Concepteur SharePoint" 
+          year ="2021"
+        />
+        <FormationCard 
+          title="Formateur PRAP" 
+          location="Lyon"
+          year="2018"
+        />
+        <FormationCard 
+          title="Formation Entreprendre et Réussir" 
+          location="Modane"
+          year="2017"
+        />
+        <FormationCard 
+          title="Formateur Chef d'Intervention" 
+          location="Modane"
+          year="2017"
+        />
+        <FormationCard 
+          title="Formateur Premier Secours" 
+          location="Modane"
+          year="2018"
+        />
+        <FormationCard 
+          title="Monitorat National de Premier Secours" 
+          location="Moulins sur Allier"
+          year="2016"
+        />
+        <FormationCard 
+          title="Chef d'Intervention" 
+          location="Montluçon"
+          year="2016"
+        />
+        <FormationCard 
+          title="Baccalauréat STI Electrotechnique" 
+          location="Montluçon"
+          year="2015"
+        />
+        <FormationCard 
+          title="Premiers Secours en Equipe niveau 2" 
+          location="Montluçon"
+          year="2015"
+        />
+        <FormationCard 
+          title="Premiers Secours en Equipe niveau 1" 
+          location="Montluçon"
+          year="2014"
+        />
+        <FormationCard 
+          title="Brevet National des Premiers Secours" 
+          location="Montluçon"
+          year="2013"
+        />
+        <FormationCard 
+          title="Attestation de Formation aux Premiers Secours" 
+          location="Montluçon"
+          year="2012"
+        />
+      </div>
+      
+      <!-- Timeline -->
+      <div class="mt-16">
+        <SectionTitle 
+          title="Parcours chronologique" 
+          subtitle="Évolution de ma formation au fil des années" 
+        />
+        
+        <div class="relative border-l-2 border-primary pl-8 ml-4 mt-8">
+          <!-- Timeline items -->
+          <div class="mb-10 relative">
+            <div class="absolute -left-10 mt-1.5 h-4 w-4 rounded-full bg-primary"></div>
+            <h3 class="text-xl font-semibold text-secondary">2021-2023</h3>
+            <p class="text-gray-700 mt-2">Spécialisation Microsoft Power Platform (Power Automate, Power BI, PowerApps)</p>
+            <p class="text-gray-600 mt-1">Développement de compétences avancées en automatisation, analyse de données et création d'applications métier.</p>
+          </div>
+          
+          <div class="mb-10 relative">
+            <div class="absolute -left-10 mt-1.5 h-4 w-4 rounded-full bg-primary"></div>
+            <h3 class="text-xl font-semibold text-secondary">2018-2020</h3>
+            <p class="text-gray-700 mt-2">Formation de formateurs et encadrement</p>
+            <p class="text-gray-600 mt-1">Acquisition des compétences pédagogiques avancées et techniques d'encadrement d'activités de formation.</p>
+          </div>
+          
+          <div class="mb-10 relative">
+            <div class="absolute -left-10 mt-1.5 h-4 w-4 rounded-full bg-primary"></div>
+            <h3 class="text-xl font-semibold text-secondary">2016-2017</h3>
+            <p class="text-gray-700 mt-2">Gestion d'intervention et secourisme avancé</p>
+            <p class="text-gray-600 mt-1">Formation à la coordination d'équipes de secouristes et à la gestion des situations d'urgence complexes.</p>
+          </div>
+          
+          <div class="mb-10 relative">
+            <div class="absolute -left-10 mt-1.5 h-4 w-4 rounded-full bg-primary"></div>
+            <h3 class="text-xl font-semibold text-secondary">2012-2015</h3>
+            <p class="text-gray-700 mt-2">Formation initiale et premiers secours</p>
+            <p class="text-gray-600 mt-1">Acquisition des compétences fondamentales en secourisme et formation technique.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

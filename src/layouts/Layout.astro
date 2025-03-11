@@ -1,0 +1,58 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Blog personnel et CV" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-light text-dark">
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto px-4 py-6">
+        <nav class="flex justify-between items-center">
+          <a href="/" class="text-2xl font-heading font-bold text-primary">Mon Portfolio</a>
+          <ul class="flex space-x-6">
+            <li><a href="/" class="hover:text-primary transition-colors">Accueil</a></li>
+            <li><a href="/formations" class="hover:text-primary transition-colors">Formations</a></li>
+            <li><a href="/competences" class="hover:text-primary transition-colors">Compétences</a></li>
+            <li><a href="/projets" class="hover:text-primary transition-colors">Projets</a></li>
+            <li><a href="/contact" class="hover:text-primary transition-colors">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      <slot />
+    </main>
+    
+    <footer class="bg-secondary text-white mt-12 py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p>&copy; {new Date().getFullYear()} - Tous droits réservés</p>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-primary transition-colors">LinkedIn</a>
+            <a href="#" class="hover:text-primary transition-colors">GitHub</a>
+            <a href="#" class="hover:text-primary transition-colors">Email</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SectionTitle from '../../components/SectionTitle.astro';
+import BackButton from '../../components/BackButton.astro';
+---
+
+<Layout title="Formation Power BI | Mon Portfolio">
+  <div class="container mx-auto px-4 py-12">
+    <BackButton href="/formations" text="Retour aux formations" />
+    
+    <!-- Hero Banner -->
+    <div class="mb-12 rounded-lg overflow-hidden shadow-xl relative">
+      <img 
+        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+        alt="Microsoft Power BI" 
+        class="w-full h-80 object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-secondary/80 to-transparent flex items-center">
+        <div class="text-white p-8 max-w-lg">
+          <h1 class="text-4xl font-bold mb-4">Concepteur Power BI</h1>
+          <p class="text-lg">Certification Microsoft pour l'analyse de données et la création de tableaux de bord interactifs.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="md:col-span-2">
+        <SectionTitle 
+          title="À propos de cette certification" 
+          subtitle="Analyse de données et visualisation" 
+        />
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+          <div class="flex items-center mb-6">
+            <img src="https://img.icons8.com/color/96/000000/power-bi.png" alt="Power BI" class="w-16 h-16 mr-4" />
+            <div>
+              <h2 class="text-2xl font-semibold text-secondary">Microsoft Power BI</h2>
+              <p class="text-gray-600">Certification obtenue en 2022</p>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 mb-4">
+            Microsoft Power BI est une suite d'outils d'analyse commerciale qui permet de connecter diverses sources de données, de transformer et nettoyer les données, et de créer des visualisations interactives pour aider à la prise de décision.
+          </p>
+          
+          <p class="text-gray-700 mb-4">
+            La certification de Concepteur Power BI valide les compétences pour créer des rapports et des tableaux de bord efficaces qui transforment les données brutes en informations exploitables pour les entreprises.
+          </p>
+          
+          <h3 class="text-xl font-semibold text-primary mt-8 mb-4">Compétences acquises</h3>
+          <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Connexion à diverses sources de données (SQL, Excel, SharePoint, services web)</li>
+            <li>Transformation et nettoyage des données avec Power Query</li>
+            <li>Modélisation des données et création de relations</li>
+            <li>Création de mesures et de colonnes calculées avec DAX</li>
+            <li>Conception de visualisations interactives et attrayantes</li>
+            <li>Mise en place de tableaux de bord pour le suivi des KPI</li>
+            <li>Publication et partage de rapports dans le service Power BI</li>
+            <li>Configuration de l'actualisation automatique des données</li>
+          </ul>
+        </div>
+        
+        <SectionTitle 
+          title="Applications pratiques" 
+          subtitle="Exemples concrets d'utilisation" 
+        />
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-light p-5 rounded-lg">
+              <h4 class="text-lg font-semibold text-secondary mb-3">Tableau de bord des activités</h4>
+              <p class="text-gray-700 mb-3">
+                Suivi en temps réel des activités de secourisme et de formation, avec indicateurs de performance, tendances et analyses géographiques pour optimiser le déploiement des ressources.
+              </p>
+              <div class="flex items-center text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Implémenté à la Croix-Rouge</span>
+              </div>
+            </div>
+            
+            <div class="bg-light p-5 rounded-lg">
+              <h4 class="text-lg font-semibold text-secondary mb-3">Analyse des formations</h4>
+              <p class="text-gray-700 mb-3">
+                Rapport détaillé sur les formations dispensées, avec taux de réussite, satisfaction des participants, et analyse des besoins futurs pour améliorer continuellement les programmes.
+              </p>
+              <div class="flex items-center text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Utilisé pour l'amélioration continue</span>
+              </div>
+            </div>
+            
+            <div class="bg-light p-5 rounded-lg">
+              <h4 class="text-lg font-semibold text-secondary mb-3">Suivi budgétaire</h4>
+              <p class="text-gray-700 mb-3">
+                Tableau de bord financier permettant de suivre les dépenses par rapport au budget, d'identifier les écarts et de prévoir les tendances futures pour une meilleure planification.
+              </p>
+              <div class="flex items-center text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Utilisé pour la gestion financière</span>
+              </div>
+            </div>
+            
+            <div class="bg-light p-5 rounded-lg">
+              <h4 class="text-lg font-semibold text-secondary mb-3">Cartographie des interventions</h4>
+              <p class="text-gray-700 mb-3">
+                Visualisation géographique des interventions de secourisme, permettant d'identifier les zones à forte demande et d'optimiser le positionnement des équipes sur le terrain.
+              </p>
+              <div class="flex items-center text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clip-rule="evenodd" />
+                </svg>
+                <span>En cours de développement</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-1">
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 sticky top-6">
+          <h3 class="text-xl font-semibold text-secondary mb-4">Détails de la certification</h3>
+          
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-medium text-gray-700">Organisme certificateur</h4>
+              <p class="text-gray-600">Microsoft</p>
+            </div>
+            
+            <div>
+              <h4 class="font-medium text-gray-700">Date d'obtention</h4>
+              <p class="text-gray-600">2022</p>
+            </div>
+            
+            <div>
+              <h4 class="font-medium text-gray-700">Validité</h4>
+              <p class="text-gray-600">2 ans (renouvelable)</p>
+            </div>
+            
+            <div>
+              <h4 class="font-medium text-gray-700">Niveau</h4>
+              <p class="text-gray-600">Concepteur / Avancé</p>
+            </div>
+            
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="font-medium text-gray-700 mb-2">Technologies associées</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Power BI</span>
+                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">DAX</span>
+                <span class="bg-gray-500/10 text-gray-700 px-2 py-1 rounded text-sm">Power Query</span>
+                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">SQL</span>
+                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">Excel</span>
+              </div>
+            </div>
+            
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="font-medium text-gray-700 mb-2">Ressources</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a href="https://learn.microsoft.com/fr-fr/power-bi/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    Documentation officielle
+                  </a>
+                </li>
+                <li>
+                  <a href="https://powerbi.microsoft.com/fr-fr/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    Site officiel Power BI
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

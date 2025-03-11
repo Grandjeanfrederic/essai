@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+  location?: string;
+  year?: string;
+}
+
+const { title, location, year } = Astro.props;
+---
+
+<div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+  <h3 class="text-lg font-semibold text-secondary">{title}</h3>
+  {location && <p class="text-gray-600">{location}</p>}
+  {year && <p class="text-sm text-gray-500 mt-1">{year}</p>}
+</div>

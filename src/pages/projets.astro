@@ -1,0 +1,200 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+// Images pour les projets
+const projectImage1 = "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400&q=80";
+const projectImage2 = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400&q=80";
+const projectImage3 = "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400&q=80";
+const projectImage4 = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400&q=80";
+const powerAppsImage = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80";
+const powerAutomateImage = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80";
+---
+
+<Layout title="Mes Projets">
+  <section class="py-12 bg-light">
+    <div class="container mx-auto px-4">
+      <!-- Hero Banner -->
+      <div class="mb-12 rounded-lg overflow-hidden shadow-xl relative">
+        <img 
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+          alt="Projets et réalisations" 
+          class="w-full h-80 object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-secondary/80 to-transparent flex items-center">
+          <div class="text-white p-8 max-w-lg">
+            <h1 class="text-4xl font-bold mb-4">Mes Projets</h1>
+            <p class="text-lg">Découvrez mes réalisations en développement web et solutions Microsoft Power Platform.</p>
+          </div>
+        </div>
+      </div>
+      
+      <SectionTitle 
+        title="Projets Web" 
+        subtitle="Sites web conçus et développés" 
+      />
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <ProjectCard 
+          title="Croix-Rouge Puy-de-Dôme" 
+          url="https://puydedome.croix-rouge.fr" 
+          description="Site web officiel de la délégation du Puy-de-Dôme de la Croix-Rouge française. Présentation des activités, des formations et des actualités de la délégation. Le site permet aux visiteurs de s'informer sur les actions locales et les possibilités de bénévolat."
+          image={projectImage1}
+        />
+        <ProjectCard 
+          title="Croix-Rouge Ain" 
+          url="https://ain.croix-rouge.fr" 
+          description="Site web de la délégation de l'Ain de la Croix-Rouge française. Informations sur les actions locales, les possibilités de bénévolat et les services proposés. Interface intuitive permettant aux utilisateurs de trouver facilement les informations recherchées."
+          image={projectImage2}
+        />
+        <ProjectCard 
+          title="École de Musique Montluel" 
+          url="https://site.ecoledemusiquemontluel.com" 
+          description="Site web de l'école de musique de Montluel. Présentation des cours, des professeurs, des événements et des modalités d'inscription. Le site inclut un calendrier des événements et permet aux parents de suivre les actualités de l'école."
+          image={projectImage3}
+        />
+        <ProjectCard 
+          title="SharePoint URAA de LYON" 
+          description="Conception et mise en place de la page SharePoint de l'Unité Régionale d'Appui et d'Animation (URAA) de Lyon. Espace collaboratif pour les équipes et partage de ressources. Intégration de bibliothèques de documents, listes de tâches et calendriers partagés."
+          image={projectImage4}
+        />
+      </div>
+      
+      <SectionTitle 
+        title="Projets Power Platform" 
+        subtitle="Applications et automatisations développées" 
+      />
+      
+      <!-- PowerApps -->
+      <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/3 mb-6 md:mb-0 md:pr-6">
+            <img 
+              src={powerAppsImage}
+              alt="PowerApps" 
+              class="w-full h-64 object-cover rounded-lg shadow-md"
+            />
+            <div class="flex justify-center mt-4">
+              <img src="https://img.icons8.com/color/96/000000/microsoft-powerapps.png" alt="PowerApps Logo" class="w-16 h-16" />
+            </div>
+          </div>
+          <div class="md:w-2/3">
+            <h3 class="text-2xl font-semibold text-secondary mb-4">Applications PowerApps</h3>
+            <p class="text-gray-700 mb-4">
+              Conception et développement d'applications métier avec Microsoft PowerApps pour optimiser les processus internes et améliorer la productivité des équipes. Ces applications sont conçues pour répondre aux besoins spécifiques des utilisateurs et s'intègrent parfaitement avec les autres services Microsoft 365.
+            </p>
+            
+            <h4 class="text-xl font-semibold text-primary mt-6 mb-3">Exemples de réalisations :</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-light p-4 rounded-lg">
+                <h5 class="font-semibold mb-2">Application de gestion des bénévoles</h5>
+                <p class="text-gray-600">
+                  Application permettant de suivre les informations des bénévoles, leurs compétences, disponibilités et certifications. Facilite la planification des équipes pour les événements.
+                </p>
+                <div class="mt-2 flex items-center">
+                  <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">PowerApps</span>
+                  <span class="text-xs font-medium bg-secondary/10 text-secondary px-2 py-1 rounded ml-2">SharePoint</span>
+                </div>
+              </div>
+              
+              <div class="bg-light p-4 rounded-lg">
+                <h5 class="font-semibold mb-2">Suivi des formations et certifications</h5>
+                <p class="text-gray-600">
+                  Application de suivi des formations dispensées et des certifications obtenues par les membres. Inclut des rappels automatiques pour les renouvellements.
+                </p>
+                <div class="mt-2 flex items-center">
+                  <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">PowerApps</span>
+                  <span class="text-xs font-medium bg-secondary/10 text-secondary px-2 py-1 rounded ml-2">Power Automate</span>
+                </div>
+              </div>
+              
+              <div class="bg-light p-4 rounded-lg">
+                <h5 class="font-semibold mb-2">Gestion des interventions de secourisme</h5>
+                <p class="text-gray-600">
+                  Application mobile permettant de documenter les interventions sur le terrain, avec possibilité de prendre des photos et de générer des rapports automatiques.
+                </p>
+                <div class="mt-2 flex items-center">
+                  <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">PowerApps</span>
+                  <span class="text-xs font-medium bg-secondary/10 text-secondary px-2 py-1 rounded ml-2">Power BI</span>
+                </div>
+              </div>
+              
+              <div class="bg-light p-4 rounded-lg">
+                <h5 class="font-semibold mb-2">Inventaire du matériel</h5>
+                <p class="text-gray-600">
+                  Application de gestion des équipements et du matériel, avec suivi des emprunts, des maintenances et des stocks disponibles.
+                </p>
+                <div class="mt-2 flex items-center">
+                  <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">PowerApps</span>
+                  <span class="text-xs font-medium bg-secondary/10 text-secondary px-2 py-1 rounded ml-2">Dataverse</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Power Automate -->
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/3 mb-6 md:mb-0 md:pr-6">
+            <img 
+              src={powerAutomateImage}
+              alt="Power Automate" 
+              class="w-full h-64 object-cover rounded-lg shadow-md"
+            />
+            <div class="flex justify-center mt-4">
+              <img src="https://img.icons8.com/color/96/000000/microsoft-power-automate.png" alt="Power Automate Logo" class="w-16 h-16" />
+            </div>
+          </div>
+          <div class="md:w-2/3">
+            <h3 class="text-2xl font-semibold text-secondary mb-4">Automatisations Power Automate</h3>
+            <p class="text-gray-700 mb-4">
+              Création de flux de travail automatisés avec Microsoft Power Automate pour simplifier les tâches répétitives et assurer la cohérence des processus. Ces automatisations permettent de gagner du temps et de réduire les erreurs humaines dans les processus métier.
+            </p>
+            
+            <h4 class="text-xl font-semibold text-primary mt-6 mb-3">Exemples de réalisations :</h4>
+            <div class="space-y-4">
+              <div class="bg-light p-4 rounded-lg">
+                <h5 class="font-semibold mb-2">Automatisation des rappels de renouvellement de certifications</h5>
+                <p class="text-gray-600">
+                  Système automatisé qui surveille les dates d'expiration des certifications et envoie des rappels par email aux personnes concernées et à leurs responsables à des intervalles prédéfinis.
+                </p>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">Power Automate</span>
+                  <span class="text-xs font-medium bg-secondary/10 text-secondary px-2 py-1 rounded">SharePoint</span>
+                  <span class="text-xs font-medium bg-gray-500/10 text-gray-500 px-2 py-1 rounded">Outlook</span>
+                </div>
+              </div>
+              
+              <div class="bg-light p-4 rounded-lg">
+                <h5 class="font-semibold mb-2">Workflow d'approbation des demandes de formation</h5>
+                <p class="text-gray-600">
+                  Processus automatisé de soumission, d'examen et d'approbation des demandes de formation, avec notifications aux différentes parties prenantes et suivi de l'état d'avancement.
+                </p>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">Power Automate</span>
+                  <span class="text-xs font-medium bg-secondary/10 text-secondary px-2 py-1 rounded">Forms</span>
+                  <span class="text-xs font-medium bg-gray-500/10 text-gray-500 px-2 py-1 rounded">Teams</span>
+                </div>
+              </div>
+              
+              <div class="bg-light p-4 rounded-lg">
+                <h5 class="font-semibold mb-2">Synchronisation des données entre différentes plateformes</h5>
+                <p class="text-gray-600">
+                  Automatisation assurant la cohérence des données entre différents systèmes (SharePoint, Excel, bases de données externes), évitant ainsi la saisie multiple et les incohérences.
+                </p>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">Power Automate</span>
+                  <span class="text-xs font-medium bg-secondary/10 text-secondary px-2 py-1 rounded">SharePoint</span>
+                  <span class="text-xs font-medium bg-gray-500/10 text-gray-500 px-2 py-1 rounded">Excel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

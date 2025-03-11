@@ -1,0 +1,206 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SectionTitle from '../../components/SectionTitle.astro';
+import BackButton from '../../components/BackButton.astro';
+---
+
+<Layout title="Encadrant d'Activité de Formation | Mon Portfolio">
+  <div class="container mx-auto px-4 py-12">
+    <BackButton href="/formations" text="Retour aux formations" />
+    
+    <!-- Hero Banner -->
+    <div class="mb-12 rounded-lg overflow-hidden shadow-xl relative">
+      <img 
+        src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+        alt="Encadrement de formation" 
+        class="w-full h-80 object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-secondary/80 to-transparent flex items-center">
+        <div class="text-white p-8 max-w-lg">
+          <h1 class="text-4xl font-bold mb-4">Concepteur Encadrant d'Activité de Formation</h1>
+          <p class="text-lg">Formation avancée pour concevoir, organiser et évaluer des programmes de formation complets.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="md:col-span-2">
+        <SectionTitle 
+          title="À propos de cette formation" 
+          subtitle="Conception et encadrement pédagogique" 
+        />
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+          <div class="flex items-center mb-6">
+            <img src="https://img.icons8.com/color/96/000000/training.png" alt="Formation" class="w-16 h-16 mr-4" />
+            <div>
+              <h2 class="text-2xl font-semibold text-secondary">Concepteur Encadrant d'Activité de Formation</h2>
+              <p class="text-gray-600">Formation obtenue à Modane en 2020</p>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 mb-4">
+            La formation de Concepteur Encadrant d'Activité de Formation est une qualification avancée délivrée par la Croix-Rouge française qui permet de concevoir, d'organiser et d'évaluer des programmes de formation complets.
+          </p>
+          
+          <p class="text-gray-700 mb-4">
+            Cette formation représente le plus haut niveau de qualification pédagogique au sein de la Croix-Rouge française, permettant d'encadrer des équipes de formateurs et de développer des programmes de formation adaptés aux besoins spécifiques des apprenants et de l'organisation.
+          </p>
+          
+          <h3 class="text-xl font-semibold text-primary mt-8 mb-4">Compétences acquises</h3>
+          <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Conception de programmes de formation complets et cohérents</li>
+            <li>Élaboration de référentiels de formation et d'évaluation</li>
+            <li>Management d'équipes pédagogiques et coordination de formateurs</li>
+            <li>Analyse des besoins en formation et adaptation des contenus</li>
+            <li>Évaluation de l'efficacité des formations et mise en place d'améliorations</li>
+            <li>Gestion administrative et logistique des actions de formation</li>
+            <li>Maîtrise des méthodes pédagogiques innovantes</li>
+            <li>Accompagnement et développement des compétences des formateurs</li>
+          </ul>
+        </div>
+        
+        <SectionTitle 
+          title="Applications pratiques" 
+          subtitle="Expériences d'encadrement et de conception" 
+        />
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-light p-5 rounded-lg">
+              <h4 class="text-lg font-semibold text-secondary mb-3">Conception de cursus de formation</h4>
+              <p class="text-gray-700 mb-3">
+                Élaboration de programmes de formation complets pour les secouristes, incluant des parcours progressifs et des modules spécialisés adaptés aux différents niveaux et besoins.
+              </p>
+              <div class="flex items-center text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Mise en œuvre à l'échelle départementale</span>
+              </div>
+            </div>
+            
+            <div class="bg-light p-5 rounded-lg">
+              <h4 class="text-lg font-semibold text-secondary mb-3">Encadrement d'équipes de formateurs</h4>
+              <p class="text-gray-700 mb-3">
+                Management et coordination d'équipes de formateurs, avec accompagnement pédagogique, supervision des sessions et développement des compétences des formateurs.
+              </p>
+              <div class="flex items-center text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Direction d'une équipe de 15 formateurs</span>
+              </div>
+            </div>
+            
+            <div class="bg-light p-5 rounded-lg">
+              <h4 class="text-lg font-semibold text-secondary mb-3">Évaluation et amélioration continue</h4>
+              <p class="text-gray-700 mb-3">
+                Mise en place de systèmes d'évaluation des formations, analyse des retours et mise en œuvre d'améliorations continues pour garantir la qualité et l'efficacité des programmes.
+              </p>
+              <div class="flex items-center text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Démarche qualité appliquée aux formations</span>
+              </div>
+            </div>
+            
+            <div class="bg-light p-5 rounded-lg">
+              <h4 class="text-lg font-semibold text-secondary mb-3">Innovation pédagogique</h4>
+              <p class="text-gray-700 mb-3">
+                Développement et intégration de méthodes pédagogiques innovantes, utilisation des technologies numériques et adaptation des approches aux différents styles d'apprentissage.
+              </p>
+              <div class="flex items-center text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Intégration d'outils numériques</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="md:col-span-1">
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 sticky top-6">
+          <h3 class="text-xl font-semibold text-secondary mb-4">Détails de la formation</h3>
+          
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-medium text-gray-700">Organisme formateur</h4>
+              <p class="text-gray-600">Croix-Rouge française</p>
+            </div>
+            
+            <div>
+              <h4 class="font-medium text-gray-700">Lieu</h4>
+              <p class="text-gray-600">Modane</p>
+            </div>
+            
+            <div>
+              <h4 class="font-medium text-gray-700">Date d'obtention</h4>
+              <p class="text-gray-600">2020</p>
+            </div>
+            
+            <div>
+              <h4 class="font-medium text-gray-700">Durée de la formation</h4>
+              <p class="text-gray-600">80 heures</p>
+            </div>
+            
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="font-medium text-gray-700 mb-2">Prérequis</h4>
+              <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                <li>Formateur de Formateurs</li>
+                <li>Expérience significative en formation</li>
+                <li>Responsabilités au sein de l'organisation</li>
+              </ul>
+            </div>
+            
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="font-medium text-gray-700 mb-2">Compétences associées</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Gestion de projet</span>
+                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">Management d'équipe</span>
+                <span class="bg-gray-500/10 text-gray-700 px-2 py-1 rounded text-sm">Ingénierie pédagogique</span>
+                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Évaluation</span>
+              </div>
+            </div>
+            
+            <div class="pt-4 border-t border-gray-200">
+              <h4 class="font-medium text-gray-700 mb-2">Témoignage</h4>
+              <blockquote class="italic text-gray-600 border-l-4 border-primary pl-4 py-2">
+                "Cette formation m'a permis de développer une vision globale de l'ingénierie de formation et d'acquérir les compétences nécessaires pour concevoir et piloter des dispositifs de formation adaptés aux besoins spécifiques de notre organisation."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-secondary mb-4">Galerie photos</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <img 
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80" 
+              alt="Formation de formateurs" 
+              class="w-full h-32 object-cover rounded-lg"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80" 
+              alt="Encadrement pédagogique" 
+              class="w-full h-32 object-cover rounded-lg"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80" 
+              alt="Conception de formation" 
+              class="w-full h-32 object-cover rounded-lg"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80" 
+              alt="Gestion de projet" 
+              class="w-full h-32 object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
